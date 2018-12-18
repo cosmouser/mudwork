@@ -1,0 +1,27 @@
+JssUrl          = "https://jss.uni.edu:8443"
+JssIP           = "10.20.30.40" # IP of your JSS
+ApiUser         = "mudwork jss user name goes here"
+ApiPass         = "mudwork jss user password goes here"
+AdvSearchID     = 26 # ID of adv search to find computers managed by Cirrup
+CirrupUser      = "name of JSS account used by Cirrup"
+DbPath          = "/path/to/mudwork_cache.db"
+LdapFirstName   = "ldap attribute for first name goes here"
+LdapLastName    = "ldap attribute for last name goes here"
+LdapUrl         = "ldap host FQDN goes here"
+LdapPort        = 389
+LdapBase        = "ldap search base goes here"
+AdobeGroup      = "Adobe Product Group goes here"
+
+[Server]
+Host            = "usermanagement.adobe.io"
+Endpoint        = "/v2/usermanagement"
+ImsHost         = "ims-na1.adobelogin.com"
+ImsEndpointJwt  = "/ims/exchange/jwt"
+
+[Enterprise]
+Domain          = "uni.edu"
+OrgID           = "orgid goes here@AdobeOrg"
+APIKey          = "insert api key here"
+ClientSecret    = "client secret goes here"
+TechAcct        = "tech acct goes here @techacct.adobe.com"
+PrivKeyPath     = "/path/to/private.key"
