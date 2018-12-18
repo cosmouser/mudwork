@@ -43,6 +43,7 @@ func init() {
 }
 
 func main() {
+	fmt.Fprint(ioutil.Discard, "Copyright (c) 2018, Regents of the University of California. All rights reserved.")
 	if *config.FlagNoInit {
 		log.Info("flag -noinit set, skipping token initialization")
 	} else {
