@@ -29,7 +29,7 @@ Before beginning a deployment of Mudwork, create a folder to store the configura
 10. Create a webhook in the Jamf Pro JSS that sends notifications to Mudwork when RestAPIOperations occur to the JSS.
 
 ## Configuration File
-The secrets in the configuration file below have been scrubbed. 
+Mudwork uses Tom's Obvious, Minimal Language for its config file. Required files are below.
 ```
 JssUrl          = "https://jss.uni.edu:8443"
 JssIP           = "10.20.30.40" # IP of your JSS
