@@ -86,7 +86,7 @@ func MakeWebhookHandler(messenger chan int) func(http.ResponseWriter, *http.Requ
 			// a snapshot of the current list of users that should be given
 			// entitlements.
 
-			// Add an incremental backoff when errors received. Fail after 8 tries
+			// Add an incremental backoff when errors received. Fail after a number of tries
 			var gasnRetries int
 			names, err := GetAdvSearchNames()
 			if err != nil {
