@@ -119,28 +119,3 @@ func GenAddRequest(user, group string) Items {
 	umapiCollection := []Item{ui}
 	return umapiCollection
 }
-
-// func GenAddRequestMulti(users []string, group string) Items {
-// 	umapiCollection := []Item{}
-// 	for _, j := range users {
-// 		uaaGroup := []string{group}
-// 		uaa := &ActionAdd{uaaGroup}
-// 		ua := Action{Add: uaa}
-// 		uac := []Action{ua}
-// 		ui := Item{User: j, Do: uac}
-// 		umapiCollection = append(umapiCollection, ui)
-// 	}
-// 	return umapiCollection
-// }
-// func GenRemoveRequestMulti(users []string, group string) Items {
-// 	umapiCollection := []Item{}
-// 	for _, j := range users {
-// 		uarGroup := []string{group}
-// 		uaa := &ActionRemove{uarGroup}
-// 		ua := Action{Remove: uaa}
-// 		uac := []Action{ua}
-// 		ui := Item{User: j, Do: uac}
-// 		umapiCollection = append(umapiCollection, ui)
-// 	}
-// 	return umapiCollection
-// }
